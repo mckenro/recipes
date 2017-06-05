@@ -1,0 +1,5 @@
+name = Follow Extend
+description = Extend the follow module.
+package = Rob Modules
+core = 7.x
+files[] = wv_custom.module

@@ -1,0 +1,5 @@
+name = Simple Contact
+description = Customize the contact module.
+package = Rob Modules
+core = 7.x
+files[] = simple_contact.module
