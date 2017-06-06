@@ -1,15 +1,10 @@
 <?php
-function simple_contact_menu() {
-    $items = array();
-    $items['hello_friend'] = array(
-        'title' => 'Hello Friend!',
-        'page callback' => 'say_hello',
-        'access callback' => TRUE,
-        'type' => MENU_NORMAL_ITEM,
-    );
-    return $items;
-}
-
-function say_hello() {
-    return '<p>Hello my dear friend!</p>';
+function simple_contact_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'contact_site_form'){
+    // print '<pre>';
+    // print_r($form);
+    // print '</pre>';
+    $form['subject']['#access'] = 0;
+    $form['copy']['#access'] = 0;
+  }
 }
