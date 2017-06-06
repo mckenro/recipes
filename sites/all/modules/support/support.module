@@ -1,0 +1,15 @@
+<?php
+function support_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'news_node_form' || $form_id == 'awards_and_reviews_node_form' || $form_id == 'tips_and_tricks_node_form'){
+    // print '<pre>';
+    // print_r($form);
+    // print '</pre>';
+    $form['menu']['#access'] = 0; //works
+    $form['author']['#access'] = 0; //works
+    $form['path']['#access'] = 0; //works
+    $form['options']['#access'] = 0; //works
+    $form['revision_information']['#access'] = 0; //works
+    $form['comment_settings']['#access'] = 0; //works
+    $form['comment_settings']['comment']['#default_value'] = 1;
+  }
+}

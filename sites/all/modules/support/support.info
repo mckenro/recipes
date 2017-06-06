@@ -1,0 +1,5 @@
+name = Support Module
+description = Simplifies the forms for submitting custom content.
+package = Rob Modules
+core = 7.x
+files[] = support.module
