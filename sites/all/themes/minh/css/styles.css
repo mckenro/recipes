@@ -1,0 +1,28 @@
+body {
+  background: #f1f1f1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#page, .container {
+    max-width: 1050px;
+    min-width: 240px;
+    overflow: visible;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content {
+  display:block;
+  clear: both;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #cdcdcd;
+}
+
+#newright{
+float: right;
+width: 28.58%;
+max-width: 300px;
+line-height: 20px;
+}
